@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/84fc029901.js"></script>
     <link rel="stylesheet" href="assets/style/main.css">
     <title>music-is-fun</title>
 </head>
@@ -20,11 +21,8 @@
         </nav>
     </header>
     <main class="container-fluid">
-        <section class="row">
-            <div class="col-12 bannerStyle">
-                <p>Music is Fun</p>
-            </div>
-            <div class="offset-8 col-4">
+        <section class="row mt-5">
+            <div class="col-3 mb-3">
                 <form onsubmit="app.songsController.search(event)">
                     <input type="text" class="form-control" name="query" placeholder="Search For Music" />
                     <button class="btn btn-success mt-1 form-control" type="submit">
@@ -34,14 +32,30 @@
             </div>
         </section>
 
-        <section class="row">
-            <div class="col-6">
+        <section class="row ml-2">
+            <div class="col-3 bg-success">
                 <h3 class="text-center">Search Results</h3>
                 <div id="songs" class="col-12 m-0">
                     <!-- template to generate -->
                 </div>
             </div>
             <div class="col-6">
+                <div class="row justify-content-center"> 
+                    <h3>Now Playing...</h3>
+                </div>
+                <div class="row justify-content-center">
+                    <img id="now-playing-img" src="https://lh3.googleusercontent.com/proxy/KtW9EoAzhzPfz7FE6vwMfmJSeg2wr0Rp_QN8duqTivX_XdNg4f0ysc4qXiv4g5pQEGT5_8_JdItTldvlamp3-poLY-xV08g" alt="">
+                    
+                </div>
+               <div class="row">
+                   <div id="song-info" class="col">
+                    </div>
+               </div>
+                <div class="row justify-content-center">
+                    <audio controls id="current-song"></audio>
+                </div>
+            </div>
+            <div class="col-3">
                 <h3 class="text-center">Playlist</h3>
                 <div class="col-12 m-0" id="playlist">
                     <!-- template for playlist -->

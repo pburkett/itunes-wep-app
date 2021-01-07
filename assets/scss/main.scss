@@ -15,5 +15,32 @@ main {
   flex-grow: 1;
 }
 
+.search-result-img {
+  width: 80px;
+  height: 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.w-fit-content {
+  width: fit-content !important;
+}
+#now-playing-img{
+  width: 300px;
+  height: 300px;
+}
+.play-icon-sm {
+  font-size: large;
+  color: $info;
+}
+.playlist-remove-div {
+  height: 10px;
+  width: 10px;
+  float: right;
+  
+}
+.playlist-remove {
+  position: absolute;
+}
 
 
